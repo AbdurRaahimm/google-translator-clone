@@ -11,9 +11,7 @@ langSwap = document.querySelector('.lan-swap i'),
 fromTxt = document.querySelector('#fromTxt');
 
 
-
-
-
+// language swap
 langSwap.addEventListener('click', ()=>{
     [languageSelect[0].value, languageSelect[1].value] = [languageSelect[1].value, languageSelect[0].value];
     swap()
@@ -21,8 +19,7 @@ langSwap.addEventListener('click', ()=>{
 
 
 
-
-
+// language Select
 languageSelect.forEach((select, id) => {
     for (const [key, value] of Object.entries(languageCodes)) {
         let selected;
@@ -64,7 +61,15 @@ fromTxt.addEventListener('input', ()=>{
     urlParams.set('to', translateTo);
     window.history.replaceState({}, '', `${location.pathname}?${urlParams}`);
 
-    
 })
+
+// get url params
+const urlParams = new URLSearchParams(window.location.search);
+
+// set value from url params
+fromTxt.value = urlParams.get('text') ? urlParams.get('text') : '';
+languageSelect[0].value = urlParams.get('from') ? urlParams.get('from') : 'en-GB';
+languageSelect[1].value = urlParams.get('to') ? urlParams.get('to') : 'bn-IN';
+
 
 voiceCopy(languageSelect[0].value, languageSelect[1].value);
