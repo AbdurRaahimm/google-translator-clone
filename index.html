@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Translate Clone</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="log">
+            <!-- <img src="img/google.png" alt="google"> -->
+            <i class="bi bi-list"></i>
+            <h2>Google Translate Clone</h2>
+        </div>
+        <div class="darkMode">
+            <button class="btn"> <i class="bi bi-moon-fill"></i> Night</button>
+        </div>
+    </header>
+    <main>
+        <div class="lan-selected">
+            <div class="lan-to">
+                <select name="" id=""></select>
+            </div>
+            <div class="lan-swap"> 
+                <i class="bi bi-arrow-left-right"></i>
+            </div>
+            <div class="lan-from">
+                <select name="" id=""></select>
+            </div>
+        </div>
+        <div class="txtBox">
+            <div class="txtTo" >
+                <textarea name="" id="fromTxt" cols="30" rows="8" placeholder="Enter Text"></textarea>
+                <i class="bi bi-x" hidden></i>
+                <div class="icon">
+                    <i class="bi bi-volume-up-fill copyFrom"></i>
+                    <i class="bi bi-copy copyFrom"></i>
+                </div>
+            </div>
+            <div class="txtFrom" >
+                <textarea name="" id="toTxt" cols="30" rows="8" placeholder="Translation" readonly disabled></textarea>
+                <div class="icon">
+                    <i class="bi bi-volume-up-fill copyTo"></i>
+                    <i class="bi bi-copy copyTo"></i>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+        <p>Created by <span> <a href="https://github.com/AbdurRaahimm">Abdur Rahim</a> Inspired from Google Translate</span></p>
+    </footer>
+
+
+    <script type="module" src="./main.js"></script>
+</body>
+</html>
