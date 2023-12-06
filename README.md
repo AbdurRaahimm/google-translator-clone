@@ -12,7 +12,7 @@ This is a clone of Google Translator. It is a simple web application that allows
 * Javascript
 
 ## Demo
-Here is a working live demo: https://google-translator-clone.netlify.app/
+Here is a working live demo: https://abdurraahimm.github.io/google-translator-clone/
 
 ## Setup
 * Clone this repo to your local machine using `
